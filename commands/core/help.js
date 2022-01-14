@@ -14,7 +14,7 @@ module.exports = {
         embed.setThumbnail(client.user.displayAvatarURL())
         const commands = client.commands.filter(x => x.showHelp !== false);
 
-        embed.setDescription('To access this music bot: [ Seraphine in your area !') ;
+        embed.setDescription('Seraphine in your area !') ;
         embed.addField(`Available - ${commands.size} Command Available`, commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}`).join(' | '));
 
         embed.setTimestamp();
