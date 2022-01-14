@@ -57,7 +57,7 @@ player.on('botDisconnect', (queue) => {
 });
 
 player.on('channelEmpty', (queue) => {
-    queue.metadata.send('I left the audio channel because there is no one on my audio channel. ❌');
+    queue.metadata.send('Runnin out of steam. ❌');
 });
 
 player.on('queueEnd', (queue) => {
