@@ -17,7 +17,7 @@ if (!queue || !queue.playing) return message.channel.send(`${message.author}, Th
 
             const success = queue.setRepeatMode(queue.repeatMode === 0 ? QueueRepeatMode.QUEUE : QueueRepeatMode.OFF);
 
-            return message.channel.send(success ? `Loop Mode: **${queue.repeatMode === 0 ? 'Inactive' : 'Active'}**, The whole sequence will repeat non-stop 🔁` : `${message.author}, Something went wrong. ❌`);
+            return message.channel.send(success ? `Loop Mode: **${queue.repeatMode === 0 ? 'Inactive' : 'Active'}**, Your song's gonna get stuck in my head ! The whole sequence will repeat non-stop 🔁` : `${message.author}, Something went wrong. ❌`);
         } else {
             if (queue.repeatMode === 2) return message.channel.send(`${message.author}, In Loop mode you must disable existing queue first **(${client.config.px}loop queue)** ❌`);
 
