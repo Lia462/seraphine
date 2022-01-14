@@ -11,6 +11,6 @@ module.exports = {
 
         queue.destroy();
 
-        message.channel.send(`The music playing on this server has been turned off, see you next time ✅`);
+        message.channel.send(`Was that...my first hater? That's the end of this performance. Encore's comin' up!`);
     },
 };
